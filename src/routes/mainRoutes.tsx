@@ -1,7 +1,7 @@
 import { RouteObject } from "react-router";
 import AppLayout from "../components/layouts/appLayout";
-import Home from "../containers/homeHOC/pages/home";
-import Dashboard from "../containers/dashboardHOC/pages/dashboard";
+import Home from "../containers/homeHOC/pages/Home";
+import Dashboard from "../containers/dashboardHOC/pages/Dashboard";
 import { DashboardPropsInit, HomePropsInit } from "../utils/init";
 
 
