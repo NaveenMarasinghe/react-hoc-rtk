@@ -1,9 +1,8 @@
 import { RouteObject } from "react-router";
 import AppLayout from "../components/layouts/appLayout";
-import Home from "../containers/homeHOC/pages/Home";
-import Dashboard from "../containers/dashboardHOC/pages/Dashboard";
+import HomePageComponent from "../containers/homeHOC/pages/Home";
+import DashboardPageComponent from "../containers/dashboardHOC/pages/Dashboard";
 import { DashboardPropsInit, HomePropsInit } from "../utils/init";
-
 
 const MainRoutes: RouteObject = {
     path: '/',
@@ -11,11 +10,11 @@ const MainRoutes: RouteObject = {
     children: [
         {
             path: "/",
-            element: <Home {...HomePropsInit}/>
+            element: <HomePageComponent {...HomePropsInit}/>
         },
         {
             path: "/dashboard",
-            element: <Dashboard {...DashboardPropsInit}/>
+            element: <DashboardPageComponent {...DashboardPropsInit}/>
         }
     ]
 }
